@@ -49,6 +49,7 @@ def buyMenu
 
 	      buyverify
 end
+
 def sellMenu	
 		puts "What would you like to sell?"
                 #same issue with indenting, and also you should have this hash at the top as a global variable, why you ask? what if you want to reference the sell price hash in another method? that method won't have access to this hash, because you are declaring it in a method. variables declared in a method are only accessible to that method (in most cases anyways)
@@ -65,6 +66,7 @@ def sellMenu
 		puts "I'll buy that off of you for #{sellprice[sellinput]}. Do you want to sell that to me?"
 		sellverify	
 end
+
 def buyVerify(item)
 		
 			confirm = gets.chomp
@@ -114,5 +116,6 @@ def returnmaintxt
 	Sell
 	Exit"
 end
+
 mainMenu
 
